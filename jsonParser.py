@@ -12,6 +12,7 @@ dataList = dataResponse['data']['children']
 
 sys.stdout = open('urlData.txt','w')
 for data in dataList:
-    print(data['data']['url'] )
+    if 'https://www.reddit.com/r/iWallpaper/comments/' not in data['data']['url']:
+        print(data['data']['url'] )
 
 
