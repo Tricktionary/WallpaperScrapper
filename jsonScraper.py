@@ -5,7 +5,7 @@ import urllib
 import urllib.request as req
 
 
-URL = 'https://www.reddit.com/r/iWallpaper/.json?count=100&after=t3_10omtd/'
+URL = 'https://www.reddit.com/r/iWallpaper/.json?limit=100&after=t3_10omtd/'
 
 response = requests.get(url = URL)
 
