@@ -1,12 +1,12 @@
 import sys
 import requests 
 
-URL = 'https://www.reddit.com/r/iWallpaper.json'
+URL = 'https://www.reddit.com/r/iWallpaper/.json?count=100&after=t3_10omtd/'
 
 response = requests.get(url = URL)
 
 dataResponse = response.json()
-print(dataResponse)
+#print(dataResponse)
 dataList = dataResponse['data']['children']
 
 
