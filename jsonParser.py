@@ -5,6 +5,13 @@ URL = 'https://www.reddit.com/r/iWallpaper.json'
 
 response = requests.get(url = URL)
 
-data = response.json()
+dataResponse = response.json()
+print(dataResponse)
+dataList = dataResponse['data']['children']
+
+
 sys.stdout = open('urlData.txt','w')
-print(data)
+for data in dataList:
+    print(data['data']['url'] )
+
+
